@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQueryUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/origamijquerymobile.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/origami.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+
+    <div data-role="header">
+        <h1>Origami</h1>
+        <a data-rel="back" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-left ui-icon-back
+        ui-nodisc-icon ui-btn-icon-notext">Back</a>
+    </div>
+
+    <br>
+    <div class="ui-content" role="main">
+
+        <form class="ui-filterable">
+            <input id=filter-input data-type="search">
+        </form>
+
+
+        <ul data-role="listview" data-autodividers="true" data-input="#filter-input">
+            <li class="ui-li-has-thumb"><a href="origami.html#roseinfo">
+                <img src="css/images/rosa.jpg" alt="Rosa Origami">
+                <h3>AKawasaki Rose</h3>
+            </a></li>
+            <li class="ui-li-has-thumb"><a href="origami.html#roseinfo">
+                <img src="css/images/rosa.jpg" alt="Rosa Origami">
+                <h3>ABKawasaki Rose</h3>
+            </a></li>
+            <li class="ui-li-has-thumb"><a href="origami.html#roseinfo">
+                <img src="css/images/rosa.jpg" alt="Rosa Origami">
+                <h3>BKawasaki Rose</h3>
+            </a></li>
+            <li class="ui-li-has-thumb"><a href="origami.html#roseinfo">
+                <img src="css/images/rosa.jpg" alt="Rosa Origami">
+                <h3>CKawasaki Rose</h3>
+            </a></li>
+            <li class="ui-li-has-thumb"><a href="origami.html#roseinfo">
+                <img src="css/images/rosa.jpg" alt="Rosa Origami">
+                <h3>La rosa más rosa</h3>
+            </a></li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="a">
+        <div data-role="navbar" data-inset="true">
+            <ul>
+                <li><a href="index.html" class="ui-btn ui-btn-icon-top ui-icon-bars">Inicio</a></li>
+                <li><a href="index.html#acerca" class="ui-btn ui-btn-icon-top ui-icon-info">Nosotros</a></li>
+                <li><a href="origami.html?favoritos=true" class="ui-btn ui-btn-icon-top ui-icon-heart">Favoritos</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div data-role="page" id=roseinfo>
+
+    <div data-role="header">
+        <h1>Kawasaki Rose</h1>
+        <a data-rel="back" class="ui-btn ui-btn-left ui-corner-all
+                                      ui-btn-icon-left ui-icon-back ui-nodisc-icon ui-alt-icon">Atrás</a>
+    </div>
+
+    <div class="ui-content">
+        <div>
+            <p><b>Dificultad:</b> alta</p>
+            <p><b>Categoría:</b> flores</p>
+            <p><b>Imagen:</b></p>
+            <img src="css/images/rosita.jpg" alt="RosaKawasaki">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet at blanditiis consequatur
+            cupiditate deserunt dicta ea enim error et explicabo fuga hic illum impedit, iste itaque iure neque odio
+            optio, perspiciatis quam quasi qui ratione similique tempore veritatis?</p>
+        <div class="ui-grid-b ui-responsive">
+            <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-top ui-icon-heart">Favorito!</a></div>
+            <div class="ui-block-b"><a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-top ui-icon-edit">Editar</a></div>
+            <div class="ui-block-c"><a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-top ui-icon-delete">Eliminar</a></div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-inset="true">
+            <ul>
+                <li><a href="index.html" data-transition="slidedown" class="ui-btn ui-btn-icon-top ui-icon-info">Inicio</a></li>
+                <li><a href="origami.html" class="ui-btn ui-btn-icon-top ui-icon-bars">Origamis</a></li>
+                <li><a href="origami.html?favoritos=true" class="ui-btn ui-btn-icon-top ui-icon-heart">Favoritos</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
